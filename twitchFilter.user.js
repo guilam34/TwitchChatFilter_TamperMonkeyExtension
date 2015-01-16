@@ -43,7 +43,7 @@ function filter(){
 			var chatLine=$(this);
 			var chatText=chatLine.find(".message").text().trim();
         
-        	if(link==1)
+        if(link==1)
             {
             	if((chatText.indexOf('http')>=0 || chatText.indexOf('www.')>=0) && chatText!="Welcome to the chat room!")
                 {        
@@ -51,7 +51,7 @@ function filter(){
                 }
             }	
         
-        	if(emoji==1)
+       	if(emoji==1)
             {
             	if((chatLine.find(".message").find("img")).length!==0 && chatText!="Welcome to the chat room!")
                 {                    
@@ -59,7 +59,7 @@ function filter(){
                 }
             }
         
-        	if(alphaNum==1)
+       	if(alphaNum==1)
             {
                 if((/[^a-zA-Z0-9!.\*_,\?\'\"\@\s\p{Punct}]/.test(chatText)))
                 {                     
@@ -67,7 +67,7 @@ function filter(){
                 }
             }
         
-        	if(caps==1)
+       	if(caps==1)
             {
                 if(chatText===chatText.toUpperCase())
                 {                    
@@ -75,7 +75,7 @@ function filter(){
                 }
             }
 			chatLine.show(1);
-		});
+	});
 }
 
 function configureEmojiBox(){
