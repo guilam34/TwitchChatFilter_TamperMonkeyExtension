@@ -123,7 +123,7 @@ function filter(){
     	setTimeout(configureFilterBox,50);
     }
 }*/
-
+ 
 function configureEmojiBox(){
     if($('#emojiBox').is(':visible'))
     {
